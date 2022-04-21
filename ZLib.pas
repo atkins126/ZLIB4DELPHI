@@ -12,7 +12,7 @@
 {*******************************************************}
 
 {*****************************************************************************
-*  ZLib.pas (zlib 1.2.11)                                                    *
+*  ZLib.pas (zlib 1.2.12)                                                    *
 *                                                                            *
 *  copyright (c) 2002-2005 Roberto Della Pasqua (www.dellapasqua.com)        *
 *  copyright (c) 2000-2002 base2 technologies (www.base2ti.com)              *
@@ -64,7 +64,7 @@
 *****************************************************************************}
 
 (* zlib.h -- interface of the 'zlib' general purpose compression library
-  version 1.2.11, January 15th, 2017
+  version 1.2.12, January 15th, 2017
 
   Copyright (C) 1995-2017 Jean-loup Gailly and Mark Adler
 
@@ -2350,16 +2350,16 @@ implementation
   libc; {$NOINCLUDE libc}
 {$IFDEF WIN32}
 {$IFDEF AVX2}
-{$L zlib4delphi.avx2.x86.o}
+{$L zlib4delphi.x86.avx2.o}
 {$ELSE}
-{$L zlib4delphi.sse2.x86.o}
+{$L zlib4delphi.x86.sse2.o}
 {$ENDIF}
 {$ENDIF WIN32}
 {$IFDEF WIN64}
 {$IFDEF AVX2}
-{$L zlib4delphi.avx2.x64.o}
+{$L zlib4delphi.x64.avx2.o}
 {$ELSE}
-{$L zlib4delphi.sse2.x64.o}
+{$L zlib4delphi.x64.sse2.o}
 {$ENDIF}
 {$ENDIF WIN64}
 {$ENDIF}
