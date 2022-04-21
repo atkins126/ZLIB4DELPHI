@@ -32,7 +32,6 @@ requires
 
 contains
   Zip in 'Zip.pas',
-  ZLib in 'ZLib.pas',
-  libc in '..\LIBC\libc.pas';
+  ZLib in 'ZLib.pas';
 
 end.

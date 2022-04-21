@@ -122,7 +122,6 @@
         <DCCReference Include="rtl.dcp"/>
         <DCCReference Include="Zip.pas"/>
         <DCCReference Include="ZLib.pas"/>
-        <DCCReference Include="..\LIBC\libc.pas"/>
         <BuildConfiguration Include="Base">
             <Key>Base</Key>
         </BuildConfiguration>
